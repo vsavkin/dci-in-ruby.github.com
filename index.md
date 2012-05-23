@@ -55,9 +55,9 @@ Just to make it clear; the goal is not to write a book about DCI, but to develop
 
 If you are interested in DCI and you'd like to join in, there are a few ways you can do it:
 
-* If you have any ideas or comments, feel free to use the wiki or send an email to vic.savkin@gmail.com.
+* If you have any ideas or comments, feel free to use the wiki or send an email to [vic.savkin@gmail.com](mailto:vic.savkin@gmail.com).
 
-* Feel like writing code? Just clone for the github repository that will be created and send a pull request. If you want a closer collaboration, send an email to vic.savkin@gmail.com and we'll figure something out.
+* Feel like writing code? Just clone the github repository that will be created and send a pull request. If you want a closer collaboration, send an email to [vic.savkin@gmail.com](mailto:vic.savkin@gmail.com) and we'll figure something out.
 
 Since I'm by no means an expert in DCI and this project is my attempt to learn it, I'd appreciate all kinds of comments and questions.
 
