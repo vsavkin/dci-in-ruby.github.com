@@ -61,7 +61,7 @@ If you are interested in DCI and you'd like to join in, there are a few ways you
 
 Since I'm by no means an expert in DCI and this project is my attempt to learn it, I'd appreciate all kinds of comments and questions.
 
-## Follow to project
+## Stay tuned
 
 I'm going to blog about the project at [Victor Savkin's Blog](http://victorsavkin.com) and tweet about it at [@VictorSavkin](http://twitter.com/victorsavkin).
  
