@@ -5,6 +5,7 @@ tagline: A sample application illustrating the Data Context Interaction paradigm
 ---
 {% include JB/setup %}
 
+
 ## Why DCI?
 
 DCI (Data Context Interaction) is a new way to look at object-oriented programming. Instead of focusing on individual objects, the DCI paradigm focuses on communication between object and makes it explicit. It improves the readability of the code, which helps programmers to reason about their programs.
@@ -19,7 +20,7 @@ Like the following projects:
 
 * [The Silverlight Cookbook](http://silverlightcookbook.codeplex.com/). A reference application for Silverlight 5 LOB apps.
 
-The same way I feel about DCI right now I felt after reading the Domain Driven Design book. I knew there was a lot of value in the DDD approach, but I was missing a real world example illustrating all the building blocks working together.  Discovering DDDSample helped a lot. Looking at the source code of a real application is what I needed for an “Aha!” moment.
+I feel about DCI now the same way I felt after reading the Domain Driven Design book. I knew there was a lot of value in the DDD approach, but a real world example, illustrating all the building blocks working together, was missing.  Discovering DDDSample helped a lot. Looking at the source code of a real application is what I needed for an “Aha!” moment.
  
 ## Goal
 
@@ -54,9 +55,9 @@ Just to make it clear; the goal is not to write a book about DCI, but to develop
 
 If you are interested in DCI and you'd like to join in, there are a few ways you can do it:
 
-* If you have any ideas or comments, feel free to use the wiki or send an email to [vic.savkin@gmail.com](mailto:vic.savkin@gmail.com).
+* If you have any ideas or comments, feel free to use the wiki or send an email to vic.savkin@gmail.com.
 
-* Feel like writing code? Just clone for the github repository that will be created and send a pull request. If you want a closer collaboration, send an email to [vic.savkin@gmail.com](mailto:vic.savkin@gmail.com) and we'll figure something out.
+* Feel like writing code? Just clone for the github repository that will be created and send a pull request. If you want a closer collaboration, send an email to vic.savkin@gmail.com and we'll figure something out.
 
 Since I'm by no means an expert in DCI and this project is my attempt to learn it, I'd appreciate all kinds of comments and questions.
 
