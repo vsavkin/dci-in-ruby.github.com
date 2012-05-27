@@ -13,10 +13,19 @@ h2 {
   margin-bottom: 5px;
 }
 
+h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
 footer {
   margin-top: 30px;
 }
 
 footer p {
   font-size: 12px;
+}
+
+blockquote {
+  font-style:italic;
 }
