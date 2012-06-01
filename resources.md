@@ -46,7 +46,7 @@ This book is filling the need for a practical introduction to DCI for Rubyists. 
 
 ## Papers
 
-[A DCI Execution Model by Trygve Reenskaug](http://heim.ifi.uio.no/~trygver/2010/DCIExecutionModel.pdf)
+### [A DCI Execution Model by Trygve Reenskaug](http://folk.uio.no/trygver/2012/DCIExecutionModel-2.1.pdf)
 <blockquote>"This article is about an execution model for DCI. An important aspect is the handling of DCI Contexts at runtime; where they are stored and how they are accessed. DCI in general and the DCI Context in particular make data communication a first class citizen of computer programming.""
 </blockquote>
 
