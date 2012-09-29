@@ -6,6 +6,12 @@ group: navigation
 ---
 {% include JB/setup %}
 
+## DCI-IN-RUBY.INFO
+
+[Data Context Interaction: The Evolution of the Object Oriented Paradigm (published on rubysource.com)](http://rubysource.com/dci-the-evolution-of-the-object-oriented-paradigm/)
+
+This article is a practical introduction to DCI (Data Context Interaction). I’m not going to explain all theory behind it. Instead, I’m going to show you what kind of problems DCI is trying to solve and how it can be implemented in Ruby.
+
 ## Talks
 
 ### James Coplien - The DCI Architecture: Supporting the Agile Agenda.
