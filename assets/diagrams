@@ -1,0 +1,94 @@
+
+title Creating New Auction
+
+View->AuctionsController:create()
+
+AuctionsController->+CreatingAuction:create(user, params, self)
+
+note right of AuctionsController
+Passes:
+Current User
+Auction Params (data transfer object)
+self (for callbacks)
+end note
+
+CreatingAuction->+Item:make(attrs)
+Item-->>-CreatingAuction:item
+
+CreatingAuction->+Auction:make(attrs)
+Auction-->>-CreatingAuction:auction
+
+
+CreatingAuction->-AuctionsController:create_on_success(auction_id)
+
+
+AuctionsController->View:"renders json"
+
+
+
+
+
+title Creating New Auction
+
+CreatingAuction->+Seller:start_auction()
+
+Seller->+AuctionCreator:create_auction()
+
+AuctionCreator-->>-Seller:auction
+
+Seller->Auction:start()
+
+Seller-->>-CreatingAuction:auction
+
+CreatingAuction->-Listener:create_on_success(auction_id)
+
+
+
+
+
+title Bidding
+
+View->BidsController:create()
+
+BidsController->+Bidding:bid(user, params, self)
+
+note right of BidsController
+Passes:
+Current User
+Bid Params (data transfer object)
+self (for callbacks)
+end note
+
+Bidding->+Auction:asks about state
+Auction-->>-Bidding:state
+
+Bidding->+Auction:make_bid(attrs)
+Auction-->>-Bidding:bid
+
+Bidding->BidsController:create_on_success(message)
+
+BidsController->BidsController:redirect()
+
+
+
+
+
+
+title Bidding
+
+Bidding->Validator:validate()
+
+Validator->+Bidder:last_bidder?
+Bidder-->>-Validator:boolean
+
+Validator->+Biddable:asks about state
+Biddable-->>-Validator:state
+
+Bidding->Biddable:create_bid()
+
+Biddable->+Request:asks for request params
+Request-->>-Biddable:state
+
+Biddable->Biddable:make_bid()
+
+Biddable->Listener:create_on_success(message)

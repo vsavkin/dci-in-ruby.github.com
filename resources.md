@@ -3,6 +3,7 @@ layout: page
 title: "Resources"
 description: ""
 group: navigation
+weight: 1
 ---
 {% include JB/setup %}
 

@@ -29,3 +29,12 @@ footer p {
 blockquote {
   font-style:italic;
 }
+
+h2.block {
+  margin-top: 80px;
+}
+
+
+h3.block {
+  margin-top: 60px;
+}

@@ -38,15 +38,17 @@ Just to make it clear; this is a practical application of the DCI pattern, not a
 
 * [Clean Ruby](http://clean-ruby.com/)
 
+<a href="resources.html">The list of talks, books, papers, and blog posts about DCI.</a>
+
 ## Purpose
 
 The purpose of this project is to show a typical DCI application. There are many ways to implement any design pattern, and DCI is not an exception. Therefore, the application isn't meant to show the way to use DCI, but just to illustrate one of many possible approaches.
 
 ## Application
 
-* Read more about the domain of the application.
+* [Read more on what the application actually does.](/overview.html)
 
-* Read about the architecture of the application.
+* [Read the technical overview of the application.](/technical_overview.html)
 
 
 ## More on DCI and Domain Design
