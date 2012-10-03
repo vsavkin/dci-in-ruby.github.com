@@ -15,7 +15,9 @@ The domain of the project comprises the following four entities: Auction, Bid, I
 
 ![Entities](assets/images/dci_entities.png)
 
-The Auction and Bid classes form an aggregate, with Auction as the root. Thus, all bids can be created and accessed only through their auctions. Item and User are two other aggregates. The entities contain only local behaviour, there are no interactions between aggregates. An example of a method than an entity has is the following:
+The Auction and Bid classes form an aggregate, with Auction as the root. Thus, all bids can be created and accessed only through their auctions. Item and User are two other aggregates. 
+
+The entities contain only local behaviour. That is to say, there are no interactions between aggregates. An example of a method than an entity can have is the following:
 
 	  def assign_winner bidder
 	    self.winner = bidder
@@ -41,17 +43,17 @@ Creating a new auction is a fairly simple use case. First, AuctionsController se
 
 ![Creating a new auction](assets/images/creating_auctions_1.png)
 
-### Interaction
+### Context
 
-Another diagram showing how Seller, AuctionCreator, and Listener interact with each other to execute this use case inside the context:
+Another diagram showing how a seller, auction creator, and listener interact with each other to execute this use case inside the context:
 
 ![Creating a new auction (Context)](assets/images/creating_auctions_2.png)
 
 ### Notes
 
-* We're wrapping the user's input into a data transfer object (AuctionParams), that is playing the role of AuctionCreator inside the context.
+* We're wrapping the user's input into a data transfer object (AuctionParams), that is playing the role of an auction creator inside the context.
 
-* The use case isn't aware of the controller. The use case expects to be given an object (Listener) that it can notify about a success or failure. The controller is just playing the role of Listener.
+* The use case isn't aware of the controller. The use case expects to be given an object (Listener) that it can notify about a success or failure. The controller is just playing the role of a listener.
 
 <h3 class="block">Bidding</h3>
 
@@ -61,20 +63,20 @@ Bidding is a far more complicated use case. BidsController sends a message to th
 
 ### Interaction
 
-There are some pretty complicated interactions between Validator, Bidder, Biddable, Request, and Listener inside the context. The following diagram shows how the use case gets executed:
+There are some pretty complicated interactions between a validator, bidder, biddable, request, and listener inside the context. The following diagram shows how the use case gets executed:
 
 ![Bidding (Context)](assets/images/bidding_2.png)
 
 ### Notes
 
-* The use case isn't aware of the controller. The use case expects to be given an object (Listener) that it can notify about a success or failure. The controller is just playing the role of Listener.
+* The use case isn't aware of the controller. The use case expects to be given an object (Listener) that it can notify about a success or failure. The controller is just playing the role of a listener.
 
-* Validator and Biddable are two control centers in this use case.
+* The Validator and Biddable roles are two control centers in this use case.
 
 
 <h2 class="block">Persistence</h2>
 
-We didn't set out to decouple persistence from the domain logic. There are many ways to do it, but almost nobody does it in the Rails community. So we didn't want to confuse the reader by mixing such techniques with DCI. That is to say, we decoupled the contexts from ActiveRecord. Which allows you to swap a persistence framework or even completely decouple persistence without changing the contexts. To do it we had to wrap all AR methods and exceptions.
+We didn't set out to decouple persistence from the domain logic. There are many ways to do it, but almost nobody does it in the Rails community. So we didn't want to confuse the reader by mixing such techniques with DCI. But even so, we decoupled the contexts from ActiveRecord. Which allows us, if I have such a need, to swap a persistence framework or even completely decouple persistence without changing the contexts. To do it we had to wrap up all AR methods and exceptions.
 
 	  def self.make attrs
 	    create! attrs.merge(status: PENDING)
@@ -84,7 +86,7 @@ We didn't set out to decouple persistence from the domain logic. There are many 
 
 <h2 class="block">Presenters</h2>
 
-Being big fans of logicless templates, we wrap all domain objects into presenters. 
+Being big fans of logicless templates, we wrap up all the domain objects in presenters. 
 
 	  def show
 	    auction_to_show = Auction.find(params[:id])
