@@ -97,7 +97,7 @@ Being big fans of logicless templates, we wrap up all the domain objects in pres
 
 As I've already mentioned, we decided not to completely decouple persistence from the domain logic to make the application easier to understand. However, we went a little bit further with separating controllers and contexts. 
 
-### A context shouldn't anything about Controllers, Views, and Rails in general.
+### A context shouldn't know anything about Controllers, Views, and Rails in general.
 
 One way to achieve this decoupling is to build a response inside a context that a controller can deconstruct.
 

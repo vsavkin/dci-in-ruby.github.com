@@ -23,7 +23,7 @@ This is a fantastic talk (or rather a lecture) James Coplien gave a few years ag
 
 ### [James Coplien on DCI](http://www.tele-task.de/archive/lecture/overview/6269/)
 
-Another awesome talk by James Coplien, but this one is more recent. This talk is provocative. It makes you think about object-oriented programming and software in general. It's inspiring. You'll want to try DCI out right after you finish watching. [You definitely should check this talk out.](http://www.tele-task.de/archive/lecture/overview/6269/)
+Another awesome talk by James Coplien, but this one is more recent. This talk is provocative. It makes you think about object-oriented programming and software in general. It's inspiring. You'll want to try out DCI right after you finish watching. [You definitely should check this talk out.](http://www.tele-task.de/archive/lecture/overview/6269/)
 
 ### Jim Gay - It's Business Time 
 
@@ -47,7 +47,7 @@ This talk is more ruby-focused than the previous two. Jim briefly introduces the
 <img src="http://s3.amazonaws.com/solarhost/21/assets/58/book-shadow.png" style="float:left; height:160px; width:125px;"/>
 <blockquote>"Make your code more obvious and put the logic right where you expect it; read “Clean Ruby” and enhance your MVC design with DCI."
 </blockquote>
-This book is filling the need for a practical introduction to DCI for Rubyists. It's still work in progress (about 50 pages are ready so far), but it looks very promising.
+This book is filling the need for a practical introduction to DCI for Rubyists. It's still work in progress, but it looks very promising.
 
 <br style="clear:both;"/>
 

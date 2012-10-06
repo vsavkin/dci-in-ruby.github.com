@@ -43,3 +43,11 @@ p.block{
   margin-top: 30px;
   margin-bottom: 20px;
 }
+
+li {
+  margin-top: 10px;
+}
+
+li.menu {
+  margin-top: 0px;
+}
